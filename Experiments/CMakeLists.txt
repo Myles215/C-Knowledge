@@ -22,13 +22,16 @@ set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
+set (CMAKE_CXX_FLAGS "-O3 -Wall")
 
-add_executable(
-  bench_test
-  Benchmark.cpp
-)
+add_subdirectory(DataStructures)
 
-target_link_libraries(
-  bench_test
-  benchmark::benchmark
-)
+# add_executable(
+#   bench_test
+#   Benchmark.cpp
+# )
+
+# target_link_libraries(
+#   bench_test
+#   benchmark::benchmark
+# )
