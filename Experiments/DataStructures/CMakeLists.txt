@@ -39,3 +39,13 @@ target_link_libraries(
   ListVsVectorDelete
   benchmark::benchmark
 )
+
+add_executable(
+  MapDelete
+  MapDelete.cpp
+)
+
+target_link_libraries(
+  MapDelete
+  benchmark::benchmark
+)
