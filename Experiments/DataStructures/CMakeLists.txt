@@ -49,3 +49,13 @@ target_link_libraries(
   MapDelete
   benchmark::benchmark
 )
+
+add_executable(
+  StringVsInt
+  StringVsInt.cpp
+)
+
+target_link_libraries(
+  StringVsInt
+  benchmark::benchmark
+)
