@@ -18,7 +18,7 @@ FetchContent_Declare(
 )
 FetchContent_MakeAvailable(googletest benchmark)
 
-set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
@@ -26,13 +26,5 @@ set (CMAKE_CXX_FLAGS "-O3 -Wall")
 
 add_subdirectory(DataStructures)
 add_subdirectory(Functions)
-
-# add_executable(
-#   bench_test
-#   Benchmark.cpp
-# )
-
-# target_link_libraries(
-#   bench_test
-#   benchmark::benchmark
-# )
+add_subdirectory(Types)
+add_subdirectory(Polymorphism)

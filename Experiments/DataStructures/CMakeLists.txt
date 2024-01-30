@@ -59,3 +59,13 @@ target_link_libraries(
   StringVsInt
   benchmark::benchmark
 )
+
+add_executable(
+  CharAllocation
+  CharAllocation.cpp
+)
+
+target_link_libraries(
+  CharAllocation
+  benchmark::benchmark
+)
