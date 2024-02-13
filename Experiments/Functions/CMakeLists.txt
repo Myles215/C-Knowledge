@@ -19,3 +19,13 @@ target_link_libraries(
   Coroutine
   benchmark::benchmark
 )
+
+add_executable(
+  AsyncVsThread
+  AsyncVsThread.cpp
+)
+
+target_link_libraries(
+  AsyncVsThread
+  benchmark::benchmark
+)
